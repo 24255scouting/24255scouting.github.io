@@ -36,7 +36,7 @@ while True:
     
     data_list = user_input.split(',')
     
-    if len(data_list) != 14:
+    if len(data_list) != 18:
         print("[ERROR][Input is Invalid.][Check input format.]")
         continue
     
@@ -46,10 +46,11 @@ while True:
     else:
         # New DataFrame
         df = pd.DataFrame([data_list], columns=[
-            'Match Type', 'Team Number', 'Match Number', 'Auto Position',
-            'Auto Sample Missed', 'Auto Specimen Scored', 'Park', 'Cycles',
-            'Tele Samples Scored', 'Tele Samples Missed', 'Ascent Tier',
-            'Ascent Time', 'Partner Climbing', 'Comments'
+            'Match Type', 'Cycles', 'Team Number', 'Tele Samples Scored',
+            'Match Number', 'Tele Samples Missed', 'Auto Position',
+            'Tele Specimens Scored', 'Auto Sample Scored', 'Tele Specimens Missed',
+            'Auto Samples Missed', 'Ascent Tier', 'Ascent Time',
+            'Auto Specimen Scored', 'Partner Climb?', 'Park?', 'Comments'
         ])
 
     # Write to Excel

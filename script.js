@@ -1,19 +1,23 @@
 document.getElementById('generateBtn').addEventListener('click', function() {
     const inputs = [
-        document.getElementById('matchType').value,
-        document.getElementById('teamNumber').value,
-        document.getElementById('matchNumber').value,
-        document.getElementById('autoPosition').value,
-        document.getElementById('autoSampleMissed').value,
-        document.getElementById('autoSpecimenScored').value,
-        document.getElementById('park').value,
-        document.getElementById('cycles').value,
-        document.getElementById('teleSamplesScored').value,
-        document.getElementById('teleSamplesMissed').value,
-        document.getElementById('ascentTier').value,
-        document.getElementById('ascentTime').value,
-        document.getElementById('partnerClimbing').value,
-        document.getElementById('comments').value
+      document.getElementById('matchType').value,
+      document.getElementById('cycles').value,
+      document.getElementById('teamNumber').value,
+      document.getElementById('teleSamplesScored').value,      // Tele Samples Scored
+      document.getElementById('matchNumber').value,            // Match Number
+      document.getElementById('teleSamplesMissed').value,      // Tele Samples Missed
+      document.getElementById('autoPosition').value,           // Auto Position
+      document.getElementById('teleSpecimensScored').value,    // Tele Specimens Scored
+      document.getElementById('autoSampleScored').value,       // Auto Sample Scored
+      document.getElementById('teleSpecimensMissed').value,    // Tele Specimens Missed
+      document.getElementById('autoSampleMissed').value,       // Auto Sample Missed
+      document.getElementById('ascentTier').value,             // Ascent Tier
+      document.getElementById('autoSpecimenScored').value,     // Auto Specimen Scored
+      document.getElementById('ascentTime').value,
+      document.getElementById('autoSpecimenMissed').value,           // Ascent Time
+      document.getElementById('partnerClimbing').value,        // Partner Climb?
+      document.getElementById('park').value,                   // Park?
+      document.getElementById('comments').value                // Comments
     ];
 
     if (inputs.some(input => input === '')) {
@@ -28,20 +32,24 @@ document.getElementById('generateBtn').addEventListener('click', function() {
 
 document.getElementById('copyBtn').addEventListener('click', function() {
     const inputs = [
-        document.getElementById('matchType').value,
-        document.getElementById('teamNumber').value,
-        document.getElementById('matchNumber').value,
-        document.getElementById('autoPosition').value,
-        document.getElementById('autoSampleMissed').value,
-        document.getElementById('autoSpecimenScored').value,
-        document.getElementById('park').value,
-        document.getElementById('cycles').value,
-        document.getElementById('teleSamplesScored').value,
-        document.getElementById('teleSamplesMissed').value,
-        document.getElementById('ascentTier').value,
-        document.getElementById('ascentTime').value,
-        document.getElementById('partnerClimbing').value,
-        document.getElementById('comments').value
+      document.getElementById('matchType').value,
+      document.getElementById('cycles').value,
+      document.getElementById('teamNumber').value,
+      document.getElementById('teleSamplesScored').value,      // Tele Samples Scored
+      document.getElementById('matchNumber').value,            // Match Number
+      document.getElementById('teleSamplesMissed').value,      // Tele Samples Missed
+      document.getElementById('autoPosition').value,           // Auto Position
+      document.getElementById('teleSpecimensScored').value,    // Tele Specimens Scored
+      document.getElementById('autoSampleScored').value,       // Auto Sample Scored
+      document.getElementById('teleSpecimensMissed').value,    // Tele Specimens Missed
+      document.getElementById('autoSampleMissed').value,       // Auto Sample Missed
+      document.getElementById('ascentTier').value,             // Ascent Tier
+      document.getElementById('autoSpecimenScored').value,     // Auto Specimen Scored
+      document.getElementById('ascentTime').value,
+      document.getElementById('autoSpecimenMissed').value,      // Ascent Time
+      document.getElementById('partnerClimbing').value,        // Partner Climb?
+      document.getElementById('park').value,                   // Park?
+      document.getElementById('comments').value                // Comments
     ];
 
     const qrData = inputs.join(',');
