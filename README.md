@@ -27,4 +27,4 @@ The **24255 Scouting Assistant** consists of two main components: a **Webpage** 
 
 ## Conclusion
 
-The FTC Scouting Assistant is a powerful tool to streamline the scouting process for FTC teams. By utilizing both the webpage and the Python script, teams can efficiently record and manage match data. Happy scouting!
+The FTC Scouting Assistant is a tool designed to streamline the scouting process for teams. Feel free to distribute, download, edit, or re-publish the code. Happy Scouting!
