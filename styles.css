@@ -13,11 +13,21 @@ body {
   margin: 0;
   padding: 0;
 }
-
+a {
+    color: white; /* Sets the link color to white */
+}
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.infotext {
+  font-family: Verdana, sans-serif;
+  max-width: 80%;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 header {

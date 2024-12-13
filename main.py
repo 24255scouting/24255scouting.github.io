@@ -46,11 +46,14 @@ while True:
     else:
         # New DataFrame
         df = pd.DataFrame([data_list], columns=[
-            'Match Type', 'Cycles', 'Team Number', 'Tele Samples Scored',
-            'Match Number', 'Tele Samples Missed', 'Auto Position',
-            'Tele Specimens Scored', 'Auto Sample Scored', 'Tele Specimens Missed',
-            'Auto Samples Missed', 'Ascent Tier', 'Auto Specimen Scored','Ascent Time',
-            'Auto Specimen Missed', 'Partner Climb?', 'Park?', 'Comments'
+            'Match Type', 'Cycles', 'Team Number', 'Match Number',
+            'Auto Position', 'Auto Sample Scored',
+            'Auto Sample Missed', 'Auto Specimen Scored',
+            'Auto Specimen Missed', 'Park?',
+            'Tele Sample Scored', 'Tele Sample Missed',
+            'Tele Specimen Scored', 'Tele Specimen Missed',
+            'Ascent Tier', 'Ascent Time',
+            'Partner Climb?', 'Comments'
         ])
 
     # Write to Excel
