@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>侦察辅助器</title>
+</head>
+<body>
+    <header>
+        <h1>FTC 2024 侦察辅助器</h1>
+        <h4>由24255推出</h4>
+    </header>
+    <div class="top-right-button">
+      <a href="index.html" class="button">切换至英文</a>
+    </div>
+    <hr>
+    <h3>团队信息</h3>
+    <div class="input-container">
+      <div class="input-box">
+    <select id="matchType">
+        <option value=""disabled selected>赛事类型</option>
+        <option value="Practice">练习赛</option>
+        <option value="Qualification">资格赛</option>
+        <option value="Playoff">淘汰赛</option>
+    </select>
+      </div>
+      <!--
+        <div class="input-box">
+            <input type="text" id="matchType" placeholder="Match Type">
+        </div>
+      -->
+        <div class="input-box">
+            <input type="number" id="cycles" placeholder="来回次数">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teamNumber" placeholder="团队编号">
+        </div>
+        <div class="input-box">
+            <input type="number" id="matchNumber" placeholder="赛事编号">
+        </div>
+    </div>
+    <hr>
+    <h3>自动阶段</h3>
+    <div class="input-container">
+      <!--
+        <div class="input-box">
+            <input type="text" id="autoPosition" placeholder="Auto Position">
+        </div>
+      -->
+        <div class="input-box">
+      <select id="autoPosition">
+          <option value=""disabled selected>自动阶段开始时位置</option>
+          <option value="Sample">样本</option>
+          <option value="Specimen">标本</option>
+      </select>
+        </div>
+        <div class="input-box">
+            <input type="number" id="autoSampleScored" placeholder="自动阶段样本得分">
+        </div>
+        <div class="input-box">
+            <input type="number" id="autoSampleMissed" placeholder="自动阶段样本失误">
+        </div>
+        <div class="input-box">
+            <input type="number" id="autoSpecimenScored" placeholder="自动阶段标本得分">
+        </div>
+        <div class="input-box">
+            <input type="number" id="autoSpecimenMissed" placeholder="自动阶段标本失误">
+        </div>
+        <!--
+        <div class="input-box">
+            <input type="number" id="park" placeholder="Park? (0/1)">
+        </div>
+      -->
+        <div class="input-box">
+      <select id="park">
+          <option value=""disabled selected>在自动阶段结束时停靠</option>
+          <option value="Yes">是</option>
+          <option value="No">否</option>
+      </select>
+        </div>
+    </div>
+    <hr>
+    <h3>手动阶段</h3>
+    <div class="input-container">
+        <div class="input-box">
+            <input type="number" id="teleSamplesScored" placeholder="手动阶段样本得分">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSamplesMissed" placeholder="手动阶段样本失误">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSpecimensScored" placeholder="手动阶段标本得分">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSpecimensMissed" placeholder="手动阶段标本失误">
+        </div>
+    </div>
+    <hr>
+    <h3>上升阶段</h3>
+    <div class="input-container">
+      <!--
+        <div class="input-box">
+            <input type="number" id="ascentTier" placeholder="Ascent Tier">
+        </div>
+      -->
+        <div class="input-box">
+      <select id="上升等级">
+          <option value=""disabled selected>上升等级</option>
+          <option value="No Ascent">无上升</option>
+          <option value="Tier 1">一级</option>
+          <option value="Tier 2">二级</option>
+      </select>
+        </div>
+        <div class="input-box">
+            <input type="number" id="ascentTime" placeholder="上升时间">
+        </div>
+        <!--
+        <div class="input-box">
+            <input type="number" id="partnerClimbing" placeholder="Partner Climb?">
+        </div>
+      -->
+        <div class="input-box">
+      <select id="partnerClimbing">
+          <option value=""disabled selected>队友是否尝试上升</option>
+          <option value="Yes">是</option>
+          <option value="No">否</option>
+      </select>
+        </div>
+
+    </div>
+    <hr>
+    <h3>其他</h3>
+    <div class="textarea-container">
+        <textarea id="comments" placeholder="其他评论" rows="4"></textarea>
+    </div>
+    <hr>
+    <br>
+
+    <div class="button-container">
+        <button id="generateBtn">生成二维码</button>
+        <button id="copyBtn">复制内容</button>
+        <button id="clearBtn">清空输入</button>
+    </div>
+    <br><br>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -49,8 +49,8 @@ while True:
             'Match Type', 'Cycles', 'Team Number', 'Tele Samples Scored',
             'Match Number', 'Tele Samples Missed', 'Auto Position',
             'Tele Specimens Scored', 'Auto Sample Scored', 'Tele Specimens Missed',
-            'Auto Samples Missed', 'Ascent Tier', 'Ascent Time',
-            'Auto Specimen Scored', 'Partner Climb?', 'Park?', 'Comments'
+            'Auto Samples Missed', 'Ascent Tier', 'Auto Specimen Scored','Ascent Time',
+            'Auto Specimen Missed', 'Partner Climb?', 'Park?', 'Comments'
         ])
 
     # Write to Excel

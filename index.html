@@ -11,11 +11,25 @@
         <h1>FTC 2024 Scouting Assistant</h1>
         <h4>Brought by 24255</h4>
     </header>
+    <div class="top-right-button">
+      <a href="index_chi.html" class="button">Switch to Chinese</a>
+    </div>
     <hr>
+    <h3>Team Info</h3>
     <div class="input-container">
+      <div class="input-box">
+    <select id="matchType">
+        <option value=""disabled selected>Select Match Type</option>
+        <option value="Practice">Practice</option>
+        <option value="Qualification">Qualification</option>
+        <option value="Playoff">Playoff</option>
+    </select>
+      </div>
+      <!--
         <div class="input-box">
             <input type="text" id="matchType" placeholder="Match Type">
         </div>
+      -->
         <div class="input-box">
             <input type="number" id="cycles" placeholder="Cycles">
         </div>
@@ -23,56 +37,112 @@
             <input type="number" id="teamNumber" placeholder="Team Number">
         </div>
         <div class="input-box">
-            <input type="number" id="teleSamplesScored" placeholder="Tele Samples Scored">
-        </div>
-        <div class="input-box">
             <input type="number" id="matchNumber" placeholder="Match Number">
         </div>
-        <div class="input-box">
-            <input type="number" id="teleSamplesMissed" placeholder="Tele Samples Missed">
-        </div>
+    </div>
+    <hr>
+    <h3>Auto Stage</h3>
+    <div class="input-container">
+      <!--
         <div class="input-box">
             <input type="text" id="autoPosition" placeholder="Auto Position">
         </div>
+      -->
         <div class="input-box">
-            <input type="number" id="teleSpecimensScored" placeholder="Tele Specimens Scored">
+      <select id="autoPosition">
+          <option value=""disabled selected>Auto Position</option>
+          <option value="Sample">Sample</option>
+          <option value="Specimen">Specimen</option>
+      </select>
         </div>
         <div class="input-box">
             <input type="number" id="autoSampleScored" placeholder="Auto Samples Scored">
         </div>
         <div class="input-box">
-            <input type="number" id="teleSpecimensMissed" placeholder="Tele Specimens Missed">
-        </div>
-        <div class="input-box">
             <input type="number" id="autoSampleMissed" placeholder="Auto Samples Missed">
-        </div>
-        <div class="input-box">
-            <input type="number" id="ascentTier" placeholder="Ascent Tier">
         </div>
         <div class="input-box">
             <input type="number" id="autoSpecimenScored" placeholder="Auto Specimen Scored">
         </div>
         <div class="input-box">
-            <input type="number" id="ascentTime" placeholder="Ascent Time">
-        </div>
-        <div class="input-box">
             <input type="number" id="autoSpecimenMissed" placeholder="Auto Specimen Missed">
         </div>
-        <div class="input-box">
-            <input type="number" id="partnerClimbing" placeholder="Partner Climb? (0/1)">
-        </div>
+        <!--
         <div class="input-box">
             <input type="number" id="park" placeholder="Park? (0/1)">
         </div>
+      -->
         <div class="input-box">
-            <textarea id="comments" placeholder="Further Comments" rows="4"></textarea>
+      <select id="park">
+          <option value=""disabled selected>Park?</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+      </select>
         </div>
     </div>
+    <hr>
+    <h3>Tele Stage</h3>
+    <div class="input-container">
+        <div class="input-box">
+            <input type="number" id="teleSamplesScored" placeholder="Tele Samples Scored">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSamplesMissed" placeholder="Tele Samples Missed">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSpecimensScored" placeholder="Tele Specimens Scored">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSpecimensMissed" placeholder="Tele Specimens Missed">
+        </div>
+    </div>
+    <hr>
+    <h3>Ascent Stage</h3>
+    <div class="input-container">
+      <!--
+        <div class="input-box">
+            <input type="number" id="ascentTier" placeholder="Ascent Tier">
+        </div>
+      -->
+        <div class="input-box">
+      <select id="ascentTier">
+          <option value=""disabled selected>Ascent Tier</option>
+          <option value="No Ascent">No Ascent</option>
+          <option value="Tier 1">Tier 1</option>
+          <option value="Tier 2">Tier 2</option>
+      </select>
+        </div>
+        <div class="input-box">
+            <input type="number" id="ascentTime" placeholder="Ascent Time">
+        </div>
+        <!--
+        <div class="input-box">
+            <input type="number" id="partnerClimbing" placeholder="Partner Climb?">
+        </div>
+      -->
+        <div class="input-box">
+      <select id="partnerClimbing">
+          <option value=""disabled selected>Partner Climb?</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+      </select>
+        </div>
+
+    </div>
+    <hr>
+    <h3>Others</h3>
+    <div class="textarea-container">
+        <textarea id="comments" placeholder="Further Comments" rows="4"></textarea>
+    </div>
+    <hr>
+    <br>
+
     <div class="button-container">
         <button id="generateBtn">Generate QR Code</button>
         <button id="copyBtn">Copy QR Code Data</button>
         <button id="clearBtn">Clear All Inputs</button>
     </div>
+    <br><br>
 
     <script src="script.js"></script>
 </body>

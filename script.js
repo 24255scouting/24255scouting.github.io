@@ -61,5 +61,5 @@ document.getElementById('copyBtn').addEventListener('click', function() {
 });
 
 document.getElementById('clearBtn').addEventListener('click', function() {
-    document.querySelectorAll('input, textarea').forEach(input => input.value = '');
+    document.querySelectorAll('input, textarea, select').forEach(input => input.value = "");
 });

@@ -3,93 +3,142 @@
   src: url('Omnitrinx.ttf') format('truetype');
 }
 
-* { /* Universal Apply */
-  font-family: 'Rushblade', sans-serif; /* Robotic font */
+* {
+  font-family: 'Rushblade', sans-serif;
 }
 
 body {
-  background-color: #121212; /* Dark background */
-  color: white; /* White text */
+  background-color: #121212;
+  color: white;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 800px; /* Set a maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 header {
-  text-align: center; /* Center the header content */
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .input-container {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping to the next line */
-  justify-content: center; /* Center the input containers horizontally */
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
 .input-box {
-  flex: 0 0 calc(40% - 10px); /* Adjusted width for narrower boxes */
-  margin: 0 10px 10px 0; /* Right margin for spacing, bottom margin for spacing */
+  margin: 0 10px 10px 0;
 }
 
-.input-box:nth-child(2n) {
-  margin-right: 0; /* Remove right margin for every second box */
-}
-
-input::placeholder {
-  color: #888; /* Change the color */
-  font-size: 16px; /* Change the font size */
+input::placeholder,
+textarea::placeholder {
+  color: #888;
+  font-size: 16px;
 }
 
 input, textarea {
-  width: 100%; /* Full width of the box */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  background-color: #1e1e1e; /* Darker background for inputs */
-  color: white; /* White text for inputs */
-  transition: border-color 0.3s, box-shadow 0.3s; /* Transition for effects */
+  background-color: #1e1e1e;
+  color: white;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input:focus, textarea:focus {
-  border-color: #09116D; /* Change border color on focus */
-  box-shadow: 0 0 5px rgba(9, 17, 109, 0.5); /* Add shadow effect on focus */
+  border-color: #09116D;
+  box-shadow: 0 0 5px rgba(9, 17, 109, 0.5);
 }
 
-textarea::placeholder {
-  color: #888; /* Change the color */
-  font-size: 16px; /* Change the font size */
+.textarea-container {
+  text-align: center;
 }
 
 textarea {
-  font-family: 'Rushblade', sans-serif; /* Robotic font */
+  font-family: 'Rushblade', sans-serif;
+  width: 800px;
+  display: inline-block;
+  text-align: center;
 }
 
 .button-container {
-  text-align: center; /* Center the buttons */
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
 }
 
 button {
   margin: 5px;
   padding: 10px 15px;
-  border: none;
+  border: 2px solid white; /* Add a white border */
   border-radius: 4px;
-  background-color: #09116D;
+  background-color: black;
   color: white;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Transition for effects */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-  background-color: #010535; /* Darker background on hover */
-  transform: scale(1.05); /* Slightly enlarge button on hover */
+  background-color: #010535;
+  transform: scale(1.05);
 }
 
 button:active {
-  transform: scale(0.95); /* Slightly shrink button on click */
+  transform: scale(0.95);
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Rushblade', sans-serif;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 183px;
+}
+
+select:focus {
+    border-color: #09116D;
+    box-shadow: 0 0 5px rgba(9, 17, 109, 0.5);
+}
+
+select option {
+    background-color: #1e1e1e; /* Match the background color */
+    color: white; /* Match the text color */
+}
+
+.top-right-button {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+}
+
+.top-right-button .button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: 2px solid white; /* White border */
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    text-decoration: none; /* Remove underline from link */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.top-right-button .button:hover {
+    background-color: #010535; /* Darker background on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.top-right-button .button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
 }
