@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scouting Assistant</title>
+</head>
+<body>
+    <header>
+        <h1>FTC 2024 Scouting Assistant</h1>
+        <h4>Brought by 24255</h4>
+    </header>
+    <hr>
+    <div class="input-container">
+        <div class="input-box">
+            <input type="text" id="matchType" placeholder="Match Type">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teamNumber" placeholder="Team Number">
+        </div>
+        <div class="input-box">
+            <input type="number" id="matchNumber" placeholder="Match Number">
+        </div>
+        <div class="input-box">
+            <input type="text" id="autoPosition" placeholder="Auto Position">
+        </div>
+        <div class="input-box">
+            <input type="number" id="autoSampleMissed" placeholder="Auto Samples Missed">
+        </div>
+        <div class="input-box">
+            <input type="number" id="autoSpecimenScored" placeholder="Auto Specimens Scored">
+        </div>
+        <div class="input-box">
+            <input type="text" id="park" placeholder="Park (0/1)">
+        </div>
+        <div class="input-box">
+            <input type="number" id="cycles" placeholder="Cycles">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSamplesScored" placeholder="Tele Samples Scored">
+        </div>
+        <div class="input-box">
+            <input type="number" id="teleSamplesMissed" placeholder="Tele Samples Missed">
+        </div>
+        <div class="input-box">
+            <input type="number" id="ascentTier" placeholder="Ascent Tier">
+        </div>
+        <div class="input-box">
+            <input type="number" id="ascentTime" placeholder="Ascent Time">
+        </div>
+        <div class="input-box">
+            <input type="number" id="partnerClimbing" placeholder="Partner Climbing?">
+        </div>
+        <div class="input-box">
+            <textarea id="comments" placeholder="Furthur Comments" rows="4"></textarea>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="generateBtn">Generate QR Code</button>
+        <button id="copyBtn">Copy QR Code Data</button>
+        <button id="clearBtn">Clear All Inputs</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
