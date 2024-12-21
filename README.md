@@ -11,7 +11,7 @@ The **24255 Scouting Assistant** consists of two main components: a **Webpage** 
 To run the offline python module, make the following python modules are installed:
 1. panda
 2. os
-3. numpy
+3. numpy\
 to install a pip module, simply type in the command module "pip install module_name".
 
 ### Webpage
