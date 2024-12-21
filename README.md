@@ -7,6 +7,13 @@ The **FTC Scouting Assistant** is designed to provide an easy-to-use on-site sco
 
 The **24255 Scouting Assistant** consists of two main components: a **Webpage** and a **Python script**.
 
+## Installation Requirements
+To run the offline python module, make the following python modules are installed:
+panda
+os
+numpy
+to install a pip module, simply type in the command module "pip install module_name".
+
 ### Webpage
 
 1. Visit the [Scouting Assistant Webpage](https://24255scouting.github.io/).
