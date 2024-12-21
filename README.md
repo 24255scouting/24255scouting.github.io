@@ -1,8 +1,7 @@
 # FTC Scouting Assistant
 ### Brought to you by FTC Team 24255
 
-The **FTC Scouting Assistant** is designed to provide an easy-to-use on-site scouting tool for FTC teams. This version is specifically tailored for the **2024 FTC "Into the Deep"** season.\
-**FTC Scouting Assistant** 旨在为 FTC 团队提供易于使用的现场侦察工具。此版本专为 **2024 FTC “Into the Deep”** 赛季定制.
+The **FTC Scouting Assistant** is designed to provide an easy-to-use on-site scouting tool for FTC teams. This version is specifically tailored for the **2024 FTC "Into the Deep"** season.
 
 ## How to Use
 
