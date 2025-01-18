@@ -35,20 +35,20 @@ document.getElementById('copyBtn').addEventListener('click', function() {
       document.getElementById('matchType').value,
       document.getElementById('cycles').value,
       document.getElementById('teamNumber').value,
-      document.getElementById('teleSamplesScored').value,      // Tele Samples Scored
       document.getElementById('matchNumber').value,            // Match Number
-      document.getElementById('teleSamplesMissed').value,      // Tele Samples Missed
       document.getElementById('autoPosition').value,           // Auto Position
-      document.getElementById('teleSpecimensScored').value,    // Tele Specimens Scored
       document.getElementById('autoSampleScored').value,       // Auto Sample Scored
-      document.getElementById('teleSpecimensMissed').value,    // Tele Specimens Missed
       document.getElementById('autoSampleMissed').value,       // Auto Sample Missed
-      document.getElementById('ascentTier').value,             // Ascent Tier
       document.getElementById('autoSpecimenScored').value,     // Auto Specimen Scored
-      document.getElementById('ascentTime').value,
-      document.getElementById('autoSpecimenMissed').value,      // Ascent Time
-      document.getElementById('partnerClimbing').value,        // Partner Climb?
       document.getElementById('park').value,                   // Park?
+      document.getElementById('teleSamplesScored').value,      // Tele Samples Scored
+      document.getElementById('teleSamplesMissed').value,      // Tele Samples Missed
+      document.getElementById('teleSpecimensScored').value,    // Tele Specimens Scored
+      document.getElementById('teleSpecimensMissed').value,    // Tele Specimens Missed
+      document.getElementById('ascentTier').value,             // Ascent Tier
+      document.getElementById('ascentTime').value,
+      document.getElementById('autoSpecimenMissed').value,           // Ascent Time
+      document.getElementById('partnerClimbing').value,        // Partner Climb?
       document.getElementById('comments').value                // Comments
     ];
 
