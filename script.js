@@ -25,7 +25,7 @@ document.getElementById('generateBtn').addEventListener('click', function() {
         return;
     }
 
-    const qrData = inputs.join(',');
+    const qrData = inputs.join('|');
     const qrCodeUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrData)}`;
     window.location.href = qrCodeUrl; // Redirect to QR code
 });
@@ -52,7 +52,7 @@ document.getElementById('copyBtn').addEventListener('click', function() {
         document.getElementById('comments').value                // Comments
       ];
 
-    const qrData = inputs.join(',');
+    const qrData = inputs.join('|');
     navigator.clipboard.writeText(qrData).then(() => {
         alert('QR Code data copied to clipboard!');
     }).catch(err => {
